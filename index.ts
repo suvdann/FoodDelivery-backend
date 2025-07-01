@@ -19,7 +19,7 @@ const databaseConnect = async () => {
     await mongoose.connect(
       "mongodb+srv://merdenesuwd2021:89866282@cluster0.cbgfjcq.mongodb.net/foodDelivery"
     );
-    console.log("Database Successfully  connencted");
+    console.log("Database Successfully  connected");
   } catch (err) {
     console.log(err);
     throw new Error("Data base assangui");
