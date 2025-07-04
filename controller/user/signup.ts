@@ -8,7 +8,7 @@ export const signUp = async (request: Request, response: Response) => {
   // console.log(isEmailExisted);
 
   if (!isEmailExisted) {
-    const hashedPAssword = await bcrypt.hashSync(password, 10);
+    const hashedPAssword = await bcrypt.hash(password, 10);
     await UserModel.create({ email, password: hashedPAssword });
     response.send({ message: "Successfully registered" });
     return;

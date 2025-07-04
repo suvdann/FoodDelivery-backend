@@ -37,6 +37,5 @@ export const login = async (request: Request, response: Response) => {
     }
   } catch (err) {
     response.status(401).send({ message: "jjjjjjjjjjjjjjjjjj" });
-    console.log(err);
   }
 };
