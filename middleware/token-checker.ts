@@ -12,7 +12,7 @@ export const tokenChecker = async (
   }
   const token = authorization.split(" ")[1];
   const tokenPassword = "foodDelivery";
-  try {
+  try {       
     const isValid = jwt.verify(token, tokenPassword);
     console.log(token);
     if (isValid) {
